@@ -11,7 +11,7 @@ public class HashTableDriver {
     System.out.print("Enter size of substring: ");
     int size = sc.nextInt();
 
-    HashTable ht = new HashTable(input, size);
+    HashingOne ht = new HashingOne(input, size);
 
     ht.splitSections();
     ht.isClosestPrime();
