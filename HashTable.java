@@ -7,7 +7,7 @@ public class HashTable {
         table = new Entry[size];
     }
 
-    private double mulHash(String subString){
+    private int mulHash(String subString){
         HashingOne hashOne = new HashingOne(subString, size);
 
         int hashedString = subString.hashCode();
@@ -18,7 +18,7 @@ public class HashTable {
         double fraction = product - Math.floor(product);
         double product2 = lesserPower * fraction;
 
-        return Math.floor(product2);
+        return (int) Math.floor(product2);
     }
 
     private int divHash(String subString){
