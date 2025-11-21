@@ -77,6 +77,16 @@ public class HashingOne {
     return closestPrime;
   }
 
+  public int isLesserPower() {
+      int lesserPower = 2;
+
+      while (lesserPower < maxPositions) {
+          lesserPower *= 2;
+      }
+
+      return lesserPower;
+  }
+
 
   /**
    * This function uses the Division Method
@@ -136,5 +146,9 @@ public class HashingOne {
 
   public ArrayList<String> getResolvedSubstring() {
     return resolvedSubstring;
+  }
+
+  public double getFraction() {
+      return CONSTANT_FRACTION;
   }
 }
