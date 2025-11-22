@@ -26,7 +26,7 @@ public class HashTable {
 
         int hashedString = subString.hashCode();
 
-        return hashedString % hashOne.isClosestPrime();
+        return Math.abs(hashedString) % hashOne.isClosestPrime();
     }
 
     public void insertMul(String kMer) {
@@ -34,19 +34,29 @@ public class HashTable {
         int loopCount = 0;
 
         while (table[index] != null) {
-            if (table[index].kmer().equals(kMer)) { //if kmer being inserted already exists inc instead of doing anything
+
+            if (table[index].kmer().equals(kMer)) {
                 table[index].inc();
                 return;
             }
+
+            // ✅ PRINT FIRST BEFORE MOVING
+            System.out.println(
+                    "Collision occurred with kMer: [" + kMer +
+                            "] and table entity: [" + table[index].kmer() +
+                            "] at index -> " + index
+            );
+
+            loopCount++;
             if (loopCount == size) {
                 System.out.println("[ERROR] CANNOT FIND EMPTY SLOTS RETURNING NOW");
+                return;
             }
-            loopCount++;
-            index = index + 1 % size; //this means it was a collision, increment then % is for the wrapping
-            System.out.println("Collision occurred with kMer: [" + kMer + "] and table entity:  [" + table[index].kmer() + "] resolving hash to -> " + index);
+
+            // NOW move
+            index = (index + 1) % size;
         }
 
-        System.out.print("insert found a new spot inserting " + kMer + "@ hash location -> " + index);
         table[index] = new Entry(kMer);
     }
 
@@ -55,19 +65,29 @@ public class HashTable {
         int loopCount = 0;
 
         while (table[index] != null) {
-            if (table[index].kmer().equals(kMer)) { //if kmer being inserted already exists inc instead of doing anything
+
+            if (table[index].kmer().equals(kMer)) {
                 table[index].inc();
                 return;
             }
+
+            // ✅ PRINT FIRST BEFORE MOVING
+            System.out.println(
+                    "Collision occurred with kMer: [" + kMer +
+                            "] and table entity: [" + table[index].kmer() +
+                            "] at index -> " + index
+            );
+
+            loopCount++;
             if (loopCount == size) {
                 System.out.println("[ERROR] CANNOT FIND EMPTY SLOTS RETURNING NOW");
+                return;
             }
-            loopCount++;
-            index = index + 1 % size; //this means it was a collision, increment then % is for the wrapping
-            System.out.println("Collision occurred with kMer: [" + kMer + "] and table entity:  [" + table[index].kmer() + "] resolving hash to -> " + index);
+
+            // NOW move
+            index = (index + 1) % size;
         }
 
-        System.out.print("insert found a new spot inserting " + kMer + "@ hash location -> " + index);
         table[index] = new Entry(kMer);
     }
 
@@ -82,6 +102,16 @@ public class HashTable {
         for (int i = 0; i <= dna.length() - k; i++) {
             String kmer = dna.substring(i, i + k);
             insertDiv(kmer);
+        }
+    }
+
+    public void print() {
+        System.out.println("Index | K-mer | Count");
+        for (int i = 0; i < size; i++) {
+            if (table[i] != null) {
+                System.out.printf("%5d | %-5s | %d\n",
+                        i, table[i].kmer(), table[i].getCount());
+            }
         }
     }
 
