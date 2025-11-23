@@ -1,0 +1,18 @@
+Mul Instance [1] time: 1008542ns
+Mul Instance [2] time: 222083ns
+Mul Instance [3] time: 196917ns
+Mul Instance [4] time: 114125ns
+Mul Instance [5] time: 146917ns
+Div Instance [1] time: 149167ns
+Div Instance [2] time: 124292ns
+Div Instance [3] time: 137708ns
+Div Instance [4] time: 85334ns
+Div Instance [5] time: 110208ns
+
+===== AVERAGE RESULTS =====
+Multiplication Hash avg time: 337716.800 ns
+Division Hash avg time: 121341.800 ns
+[MULTIPLICATION] Avg collisions: 306.000
+[DIVISION] Avg collisions: 306.000
+
+Results written to file: 32K3FullDet.txt

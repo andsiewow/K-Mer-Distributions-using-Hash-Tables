@@ -2,13 +2,13 @@ public class HashTable {
     Entry[] table;
     int size;
     private int CollisionCounter;
-    private StringBuilder CollisionLog;
+   // private StringBuilder CollisionLog;
 
     public HashTable(int size){
         this.size = size;
         table = new Entry[size];
         this.CollisionCounter = 0;
-        CollisionLog = new StringBuilder();
+     //   CollisionLog = new StringBuilder();
     }
 
     private int mulHash(String subString){
@@ -45,7 +45,7 @@ public class HashTable {
                 return;
             }
 
-            CollisionLog.append("Collision occurred with kMer: [").append(kMer).append("] and table entity: [").append(table[index].kmer()).append("] at index -> ").append(index).append("\n");
+       //     CollisionLog.append("Collision occurred with kMer: [").append(kMer).append("] and table entity: [").append(table[index].kmer()).append("] at index -> ").append(index).append("\n");
             CollisionCounter++;
 
             loopCount++;
@@ -69,7 +69,7 @@ public class HashTable {
                 table[index].inc();
                 return;
             }
-            CollisionLog.append("Collision occurred with kMer: [").append(kMer).append("] and table entity: [").append(table[index].kmer()).append("] at index -> ").append(index).append("\n");
+         //   CollisionLog.append("Collision occurred with kMer: [").append(kMer).append("] and table entity: [").append(table[index].kmer()).append("] at index -> ").append(index).append("\n");
             CollisionCounter++;
 
             loopCount++;
@@ -117,10 +117,11 @@ public class HashTable {
     public int getCollisionCounter(){
         return this.CollisionCounter;
     }
-
+/*
     public String getCollisionLog(){
         return this.CollisionLog.toString();
     }
+ */
 }
 
 

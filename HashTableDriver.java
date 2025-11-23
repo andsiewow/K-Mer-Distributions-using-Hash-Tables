@@ -6,10 +6,10 @@ public class HashTableDriver {
   public static void main(String[] args) {
 
     int sampleSize = 5;
-    int stringLength = 16;
-    int k = 3;
+    int stringLength = 1000000;
+    int k = 7;
 
-    String fileName = stringLength + "Results.txt";
+    String fileName = stringLength + "K" + k + "FullDet.txt";
 
     try (PrintWriter out = new PrintWriter(new FileWriter(fileName))) {
 
@@ -109,23 +109,6 @@ public class HashTableDriver {
       }
 
       out.println("========================================\n");
-
-      // Collision Logs
-      out.println("Collision log for all instances");
-
-      out.println("---- Multiplication Hash ----");
-      for (int i = 0; i < sampleSize; i++) {
-        out.println("Instance [" + (i + 1) + "]");
-        out.print(mulTables[i].getCollisionLog());
-        out.println();
-      }
-
-      out.println("---- Division Hash ----");
-      for (int i = 0; i < sampleSize; i++) {
-        out.println("Instance [" + (i + 1) + "]");
-        out.print(divTables[i].getCollisionLog());
-        out.println();
-      }
 
       out.flush();
       System.out.println("\nResults written to file: " + fileName);

@@ -1,0 +1,18 @@
+Mul Instance [1] time: 23371500ns
+Mul Instance [2] time: 15465709ns
+Mul Instance [3] time: 14306667ns
+Mul Instance [4] time: 14184042ns
+Mul Instance [5] time: 14123500ns
+Div Instance [1] time: 19135083ns
+Div Instance [2] time: 13861041ns
+Div Instance [3] time: 13818542ns
+Div Instance [4] time: 13886625ns
+Div Instance [5] time: 14166959ns
+
+===== AVERAGE RESULTS =====
+Multiplication Hash avg time: 16290283.600 ns
+Division Hash avg time: 14973650.000 ns
+[MULTIPLICATION] Avg collisions: 4850707.600
+[DIVISION] Avg collisions: 4850679.600
+
+Results written to file: 10000K5FullDet.txt

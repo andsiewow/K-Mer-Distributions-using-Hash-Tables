@@ -54,22 +54,26 @@ public class HashHelper {
 
     return true;
 }
-//TODO: THIS FUNCTION ACTUALLY DOESNT TAKE INTO ACCOUNT THE MAXPOSITIONS IN OUR DRIVER EASY INTEGRATION
+
   public int isClosestPrime() {
-    if (maxPositions == 2) {
+    if (maxPositions <= 2) {
       closestPrime = 2;
+      return closestPrime;
     }
-    else {
-      int i = maxPositions;
 
-      if (i % 2 == 0) {
-        i++;
-      }
+    int i = maxPositions;
 
-      while (!isPrime(i)) { //if closest LESSER prime number, just add && i < maxPositions
-        i += 2;
-      }
+    if (i % 2 == 0) {
+      i--;
+    }
 
+    while (i >= 2 && !isPrime(i)) {
+      i -= 2;
+    }
+
+    if (i < 2) {
+      closestPrime = 2;
+    } else {
       closestPrime = i;
     }
 
