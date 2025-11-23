@@ -1,0 +1,805 @@
+MasterStrings
+[1] TGGTGGGGCCACACGA
+[2] TATTCCCGCTCCTGTG
+[3] TCACGGGGTGTGCACG
+[4] GGGTGACCCTCTGAGT
+[5] GGTGGGTAGGTCACCC
+
+========================================
+
+Instance tables (Multiplication Hash)
+Instance [1] /
+Index | K-mer | Count
+    0 | TGG   | 2
+    1 | GGT   | 1
+    2 | GTG   | 1
+    3 | GGG   | 2
+    4 | GGC   | 1
+    5 | GCC   | 1
+    6 | CCA   | 1
+    7 | CAC   | 2
+    8 | ACA   | 1
+    9 | ACG   | 1
+   10 | CGA   | 1
+# of collisions [63]
+
+Instance [2] /
+Index | K-mer | Count
+    0 | TAT   | 1
+    1 | ATT   | 1
+    2 | TTC   | 1
+    3 | TCC   | 2
+    4 | CCC   | 1
+    5 | CCG   | 1
+    6 | CGC   | 1
+    7 | GCT   | 1
+    8 | CTC   | 1
+    9 | CCT   | 1
+   10 | CTG   | 1
+   11 | TGT   | 1
+   12 | GTG   | 1
+# of collisions [75]
+
+Instance [3] /
+Index | K-mer | Count
+    0 | TCA   | 1
+    1 | CAC   | 2
+    2 | ACG   | 2
+    3 | CGG   | 1
+    4 | GGG   | 2
+    5 | GGT   | 1
+    6 | GTG   | 2
+    7 | TGT   | 1
+    8 | TGC   | 1
+    9 | GCA   | 1
+# of collisions [55]
+
+Instance [4] /
+Index | K-mer | Count
+    0 | GGG   | 1
+    1 | GGT   | 1
+    2 | GTG   | 1
+    3 | TGA   | 2
+    4 | GAC   | 1
+    5 | ACC   | 1
+    6 | CCC   | 1
+    7 | CCT   | 1
+    8 | CTC   | 1
+    9 | TCT   | 1
+   10 | CTG   | 1
+   11 | GAG   | 1
+   12 | AGT   | 1
+# of collisions [73]
+
+Instance [5] /
+Index | K-mer | Count
+    0 | GGT   | 3
+    1 | GTG   | 1
+    2 | TGG   | 1
+    3 | GGG   | 1
+    4 | GTA   | 1
+    5 | TAG   | 1
+    6 | AGG   | 1
+    7 | GTC   | 1
+    8 | TCA   | 1
+    9 | CAC   | 1
+   10 | ACC   | 1
+   11 | CCC   | 1
+# of collisions [62]
+
+========================================
+
+Instance tables (Division Hash)
+Instance [1] /
+Index | K-mer | Count
+    0 | GGG   | 2
+    1 | TGG   | 2
+    2 | GGT   | 1
+    3 | GTG   | 1
+    4 | GGC   | 1
+    5 | GCC   | 1
+    6 | CCA   | 1
+    7 | CAC   | 2
+    8 | ACA   | 1
+    9 | ACG   | 1
+   10 | CGA   | 1
+# of collisions [47]
+
+Instance [2] /
+Index | K-mer | Count
+    0 | CCC   | 1
+    1 | TTC   | 1
+    2 | TAT   | 1
+    3 | ATT   | 1
+    4 | TCC   | 2
+    5 | CCG   | 1
+    6 | CGC   | 1
+    7 | GCT   | 1
+    8 | CTC   | 1
+    9 | CCT   | 1
+   10 | CTG   | 1
+   11 | TGT   | 1
+   12 | GTG   | 1
+# of collisions [64]
+
+Instance [3] /
+Index | K-mer | Count
+    0 | TCA   | 1
+    1 | CAC   | 2
+    2 | ACG   | 2
+    3 | CGG   | 1
+    4 | GGG   | 2
+    5 | GGT   | 1
+    6 | GTG   | 2
+    7 | TGT   | 1
+    8 | TGC   | 1
+    9 | GCA   | 1
+# of collisions [43]
+
+Instance [4] /
+Index | K-mer | Count
+    0 | GGG   | 1
+    1 | GGT   | 1
+    2 | GTG   | 1
+    3 | TGA   | 2
+    4 | GAC   | 1
+    5 | ACC   | 1
+    6 | CCC   | 1
+    7 | CCT   | 1
+    8 | CTC   | 1
+    9 | TCT   | 1
+   10 | CTG   | 1
+   11 | GAG   | 1
+   12 | AGT   | 1
+# of collisions [68]
+
+Instance [5] /
+Index | K-mer | Count
+    0 | GGG   | 1
+    1 | GGT   | 3
+    2 | GTG   | 1
+    3 | TGG   | 1
+    4 | GTA   | 1
+    5 | TAG   | 1
+    6 | AGG   | 1
+    7 | GTC   | 1
+    8 | TCA   | 1
+    9 | CAC   | 1
+   10 | ACC   | 1
+   11 | CCC   | 1
+# of collisions [59]
+
+========================================
+
+Collision log for all instances
+---- Multiplication Hash ----
+Instance [1]
+Collision occurred with kMer: [GGT] and table entity: [TGG] at index -> 0
+Collision occurred with kMer: [GTG] and table entity: [TGG] at index -> 0
+Collision occurred with kMer: [GTG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [GGG] and table entity: [TGG] at index -> 0
+Collision occurred with kMer: [GGG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [GGG] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GGG] and table entity: [TGG] at index -> 0
+Collision occurred with kMer: [GGG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [GGG] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GGC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [GGC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GGC] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [GCC] and table entity: [TGG] at index -> 0
+Collision occurred with kMer: [GCC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [GCC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GCC] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [GCC] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [CCA] and table entity: [TGG] at index -> 0
+Collision occurred with kMer: [CCA] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CCA] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CCA] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [CCA] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [CCA] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [CAC] and table entity: [TGG] at index -> 0
+Collision occurred with kMer: [CAC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CAC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CAC] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [CAC] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [CAC] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [CAC] and table entity: [CCA] at index -> 6
+Collision occurred with kMer: [ACA] and table entity: [TGG] at index -> 0
+Collision occurred with kMer: [ACA] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [ACA] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [ACA] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [ACA] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [ACA] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [ACA] and table entity: [CCA] at index -> 6
+Collision occurred with kMer: [ACA] and table entity: [CAC] at index -> 7
+Collision occurred with kMer: [CAC] and table entity: [TGG] at index -> 0
+Collision occurred with kMer: [CAC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CAC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CAC] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [CAC] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [CAC] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [CAC] and table entity: [CCA] at index -> 6
+Collision occurred with kMer: [ACG] and table entity: [TGG] at index -> 0
+Collision occurred with kMer: [ACG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [ACG] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [ACG] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [ACG] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [ACG] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [ACG] and table entity: [CCA] at index -> 6
+Collision occurred with kMer: [ACG] and table entity: [CAC] at index -> 7
+Collision occurred with kMer: [ACG] and table entity: [ACA] at index -> 8
+Collision occurred with kMer: [CGA] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CGA] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CGA] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [CGA] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [CGA] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [CGA] and table entity: [CCA] at index -> 6
+Collision occurred with kMer: [CGA] and table entity: [CAC] at index -> 7
+Collision occurred with kMer: [CGA] and table entity: [ACA] at index -> 8
+Collision occurred with kMer: [CGA] and table entity: [ACG] at index -> 9
+
+Instance [2]
+Collision occurred with kMer: [TTC] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [TCC] and table entity: [TAT] at index -> 0
+Collision occurred with kMer: [TCC] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [TCC] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [CCC] and table entity: [TAT] at index -> 0
+Collision occurred with kMer: [CCC] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [CCC] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [CCC] and table entity: [TCC] at index -> 3
+Collision occurred with kMer: [CCG] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [CCG] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [CCG] and table entity: [TCC] at index -> 3
+Collision occurred with kMer: [CCG] and table entity: [CCC] at index -> 4
+Collision occurred with kMer: [CGC] and table entity: [TAT] at index -> 0
+Collision occurred with kMer: [CGC] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [CGC] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [CGC] and table entity: [TCC] at index -> 3
+Collision occurred with kMer: [CGC] and table entity: [CCC] at index -> 4
+Collision occurred with kMer: [CGC] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [GCT] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [GCT] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [GCT] and table entity: [TCC] at index -> 3
+Collision occurred with kMer: [GCT] and table entity: [CCC] at index -> 4
+Collision occurred with kMer: [GCT] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [GCT] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [CTC] and table entity: [TAT] at index -> 0
+Collision occurred with kMer: [CTC] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [CTC] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [CTC] and table entity: [TCC] at index -> 3
+Collision occurred with kMer: [CTC] and table entity: [CCC] at index -> 4
+Collision occurred with kMer: [CTC] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [CTC] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [CTC] and table entity: [GCT] at index -> 7
+Collision occurred with kMer: [TCC] and table entity: [TAT] at index -> 0
+Collision occurred with kMer: [TCC] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [TCC] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [CCT] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [CCT] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [CCT] and table entity: [TCC] at index -> 3
+Collision occurred with kMer: [CCT] and table entity: [CCC] at index -> 4
+Collision occurred with kMer: [CCT] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [CCT] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [CCT] and table entity: [GCT] at index -> 7
+Collision occurred with kMer: [CCT] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [CTG] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [CTG] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [CTG] and table entity: [TCC] at index -> 3
+Collision occurred with kMer: [CTG] and table entity: [CCC] at index -> 4
+Collision occurred with kMer: [CTG] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [CTG] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [CTG] and table entity: [GCT] at index -> 7
+Collision occurred with kMer: [CTG] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [CTG] and table entity: [CCT] at index -> 9
+Collision occurred with kMer: [TGT] and table entity: [TAT] at index -> 0
+Collision occurred with kMer: [TGT] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [TGT] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [TGT] and table entity: [TCC] at index -> 3
+Collision occurred with kMer: [TGT] and table entity: [CCC] at index -> 4
+Collision occurred with kMer: [TGT] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [TGT] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [TGT] and table entity: [GCT] at index -> 7
+Collision occurred with kMer: [TGT] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [TGT] and table entity: [CCT] at index -> 9
+Collision occurred with kMer: [TGT] and table entity: [CTG] at index -> 10
+Collision occurred with kMer: [GTG] and table entity: [TAT] at index -> 0
+Collision occurred with kMer: [GTG] and table entity: [ATT] at index -> 1
+Collision occurred with kMer: [GTG] and table entity: [TTC] at index -> 2
+Collision occurred with kMer: [GTG] and table entity: [TCC] at index -> 3
+Collision occurred with kMer: [GTG] and table entity: [CCC] at index -> 4
+Collision occurred with kMer: [GTG] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [GTG] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [GTG] and table entity: [GCT] at index -> 7
+Collision occurred with kMer: [GTG] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [GTG] and table entity: [CCT] at index -> 9
+Collision occurred with kMer: [GTG] and table entity: [CTG] at index -> 10
+Collision occurred with kMer: [GTG] and table entity: [TGT] at index -> 11
+
+Instance [3]
+Collision occurred with kMer: [CAC] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [ACG] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [ACG] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [CGG] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [CGG] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GGG] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [GGG] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GGG] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GGG] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GGG] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [GGG] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GGG] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GGG] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GGT] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [GGT] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GGT] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GGT] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GGT] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [GTG] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [GTG] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GTG] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GTG] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GTG] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [GTG] and table entity: [GGT] at index -> 5
+Collision occurred with kMer: [TGT] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [TGT] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [TGT] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [TGT] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [TGT] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [TGT] and table entity: [GGT] at index -> 5
+Collision occurred with kMer: [TGT] and table entity: [GTG] at index -> 6
+Collision occurred with kMer: [GTG] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [GTG] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GTG] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GTG] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GTG] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [GTG] and table entity: [GGT] at index -> 5
+Collision occurred with kMer: [TGC] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [TGC] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [TGC] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [TGC] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [TGC] and table entity: [GGT] at index -> 5
+Collision occurred with kMer: [TGC] and table entity: [GTG] at index -> 6
+Collision occurred with kMer: [TGC] and table entity: [TGT] at index -> 7
+Collision occurred with kMer: [GCA] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GCA] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GCA] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GCA] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [GCA] and table entity: [GGT] at index -> 5
+Collision occurred with kMer: [GCA] and table entity: [GTG] at index -> 6
+Collision occurred with kMer: [GCA] and table entity: [TGT] at index -> 7
+Collision occurred with kMer: [GCA] and table entity: [TGC] at index -> 8
+Collision occurred with kMer: [CAC] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [ACG] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [ACG] and table entity: [CAC] at index -> 1
+
+Instance [4]
+Collision occurred with kMer: [GGT] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [GTG] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [GTG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TGA] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TGA] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GAC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [GAC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GAC] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [ACC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [ACC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [ACC] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [ACC] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [CCC] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [CCC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CCC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CCC] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [CCC] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [CCC] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [CCT] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CCT] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CCT] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [CCT] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [CCT] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [CCT] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [CTC] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [CTC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CTC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CTC] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [CTC] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [CTC] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [CTC] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [CTC] and table entity: [CCT] at index -> 7
+Collision occurred with kMer: [TCT] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TCT] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [TCT] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [TCT] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [TCT] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [TCT] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [TCT] and table entity: [CCT] at index -> 7
+Collision occurred with kMer: [TCT] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [CTG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CTG] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CTG] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [CTG] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [CTG] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [CTG] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [CTG] and table entity: [CCT] at index -> 7
+Collision occurred with kMer: [CTG] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [CTG] and table entity: [TCT] at index -> 9
+Collision occurred with kMer: [TGA] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TGA] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GAG] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [GAG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [GAG] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GAG] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [GAG] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [GAG] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [GAG] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [GAG] and table entity: [CCT] at index -> 7
+Collision occurred with kMer: [GAG] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [GAG] and table entity: [TCT] at index -> 9
+Collision occurred with kMer: [GAG] and table entity: [CTG] at index -> 10
+Collision occurred with kMer: [AGT] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [AGT] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [AGT] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [AGT] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [AGT] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [AGT] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [AGT] and table entity: [CCT] at index -> 7
+Collision occurred with kMer: [AGT] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [AGT] and table entity: [TCT] at index -> 9
+Collision occurred with kMer: [AGT] and table entity: [CTG] at index -> 10
+Collision occurred with kMer: [AGT] and table entity: [GAG] at index -> 11
+
+Instance [5]
+Collision occurred with kMer: [GTG] and table entity: [GGT] at index -> 0
+Collision occurred with kMer: [TGG] and table entity: [GGT] at index -> 0
+Collision occurred with kMer: [TGG] and table entity: [GTG] at index -> 1
+Collision occurred with kMer: [GGG] and table entity: [GGT] at index -> 0
+Collision occurred with kMer: [GGG] and table entity: [GTG] at index -> 1
+Collision occurred with kMer: [GGG] and table entity: [TGG] at index -> 2
+Collision occurred with kMer: [GTA] and table entity: [GTG] at index -> 1
+Collision occurred with kMer: [GTA] and table entity: [TGG] at index -> 2
+Collision occurred with kMer: [GTA] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [TAG] and table entity: [GGT] at index -> 0
+Collision occurred with kMer: [TAG] and table entity: [GTG] at index -> 1
+Collision occurred with kMer: [TAG] and table entity: [TGG] at index -> 2
+Collision occurred with kMer: [TAG] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [TAG] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [AGG] and table entity: [GTG] at index -> 1
+Collision occurred with kMer: [AGG] and table entity: [TGG] at index -> 2
+Collision occurred with kMer: [AGG] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [AGG] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [AGG] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [GTC] and table entity: [GTG] at index -> 1
+Collision occurred with kMer: [GTC] and table entity: [TGG] at index -> 2
+Collision occurred with kMer: [GTC] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [GTC] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [GTC] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [GTC] and table entity: [AGG] at index -> 6
+Collision occurred with kMer: [TCA] and table entity: [GGT] at index -> 0
+Collision occurred with kMer: [TCA] and table entity: [GTG] at index -> 1
+Collision occurred with kMer: [TCA] and table entity: [TGG] at index -> 2
+Collision occurred with kMer: [TCA] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [TCA] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [TCA] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [TCA] and table entity: [AGG] at index -> 6
+Collision occurred with kMer: [TCA] and table entity: [GTC] at index -> 7
+Collision occurred with kMer: [CAC] and table entity: [GGT] at index -> 0
+Collision occurred with kMer: [CAC] and table entity: [GTG] at index -> 1
+Collision occurred with kMer: [CAC] and table entity: [TGG] at index -> 2
+Collision occurred with kMer: [CAC] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [CAC] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [CAC] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [CAC] and table entity: [AGG] at index -> 6
+Collision occurred with kMer: [CAC] and table entity: [GTC] at index -> 7
+Collision occurred with kMer: [CAC] and table entity: [TCA] at index -> 8
+Collision occurred with kMer: [ACC] and table entity: [GTG] at index -> 1
+Collision occurred with kMer: [ACC] and table entity: [TGG] at index -> 2
+Collision occurred with kMer: [ACC] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [ACC] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [ACC] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [ACC] and table entity: [AGG] at index -> 6
+Collision occurred with kMer: [ACC] and table entity: [GTC] at index -> 7
+Collision occurred with kMer: [ACC] and table entity: [TCA] at index -> 8
+Collision occurred with kMer: [ACC] and table entity: [CAC] at index -> 9
+Collision occurred with kMer: [CCC] and table entity: [GGT] at index -> 0
+Collision occurred with kMer: [CCC] and table entity: [GTG] at index -> 1
+Collision occurred with kMer: [CCC] and table entity: [TGG] at index -> 2
+Collision occurred with kMer: [CCC] and table entity: [GGG] at index -> 3
+Collision occurred with kMer: [CCC] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [CCC] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [CCC] and table entity: [AGG] at index -> 6
+Collision occurred with kMer: [CCC] and table entity: [GTC] at index -> 7
+Collision occurred with kMer: [CCC] and table entity: [TCA] at index -> 8
+Collision occurred with kMer: [CCC] and table entity: [CAC] at index -> 9
+Collision occurred with kMer: [CCC] and table entity: [ACC] at index -> 10
+
+---- Division Hash ----
+Instance [1]
+Collision occurred with kMer: [GGT] and table entity: [TGG] at index -> 1
+Collision occurred with kMer: [GTG] and table entity: [TGG] at index -> 1
+Collision occurred with kMer: [GTG] and table entity: [GGT] at index -> 2
+Collision occurred with kMer: [GGC] and table entity: [GGT] at index -> 2
+Collision occurred with kMer: [GGC] and table entity: [GTG] at index -> 3
+Collision occurred with kMer: [GCC] and table entity: [TGG] at index -> 1
+Collision occurred with kMer: [GCC] and table entity: [GGT] at index -> 2
+Collision occurred with kMer: [GCC] and table entity: [GTG] at index -> 3
+Collision occurred with kMer: [GCC] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [CCA] and table entity: [TGG] at index -> 1
+Collision occurred with kMer: [CCA] and table entity: [GGT] at index -> 2
+Collision occurred with kMer: [CCA] and table entity: [GTG] at index -> 3
+Collision occurred with kMer: [CCA] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [CCA] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [CAC] and table entity: [TGG] at index -> 1
+Collision occurred with kMer: [CAC] and table entity: [GGT] at index -> 2
+Collision occurred with kMer: [CAC] and table entity: [GTG] at index -> 3
+Collision occurred with kMer: [CAC] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [CAC] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [CAC] and table entity: [CCA] at index -> 6
+Collision occurred with kMer: [ACA] and table entity: [GGT] at index -> 2
+Collision occurred with kMer: [ACA] and table entity: [GTG] at index -> 3
+Collision occurred with kMer: [ACA] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [ACA] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [ACA] and table entity: [CCA] at index -> 6
+Collision occurred with kMer: [ACA] and table entity: [CAC] at index -> 7
+Collision occurred with kMer: [CAC] and table entity: [TGG] at index -> 1
+Collision occurred with kMer: [CAC] and table entity: [GGT] at index -> 2
+Collision occurred with kMer: [CAC] and table entity: [GTG] at index -> 3
+Collision occurred with kMer: [CAC] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [CAC] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [CAC] and table entity: [CCA] at index -> 6
+Collision occurred with kMer: [ACG] and table entity: [GGT] at index -> 2
+Collision occurred with kMer: [ACG] and table entity: [GTG] at index -> 3
+Collision occurred with kMer: [ACG] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [ACG] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [ACG] and table entity: [CCA] at index -> 6
+Collision occurred with kMer: [ACG] and table entity: [CAC] at index -> 7
+Collision occurred with kMer: [ACG] and table entity: [ACA] at index -> 8
+Collision occurred with kMer: [CGA] and table entity: [GGT] at index -> 2
+Collision occurred with kMer: [CGA] and table entity: [GTG] at index -> 3
+Collision occurred with kMer: [CGA] and table entity: [GGC] at index -> 4
+Collision occurred with kMer: [CGA] and table entity: [GCC] at index -> 5
+Collision occurred with kMer: [CGA] and table entity: [CCA] at index -> 6
+Collision occurred with kMer: [CGA] and table entity: [CAC] at index -> 7
+Collision occurred with kMer: [CGA] and table entity: [ACA] at index -> 8
+Collision occurred with kMer: [CGA] and table entity: [ACG] at index -> 9
+
+Instance [2]
+Collision occurred with kMer: [ATT] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [TCC] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [TCC] and table entity: [ATT] at index -> 3
+Collision occurred with kMer: [CCG] and table entity: [TTC] at index -> 1
+Collision occurred with kMer: [CCG] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [CCG] and table entity: [ATT] at index -> 3
+Collision occurred with kMer: [CCG] and table entity: [TCC] at index -> 4
+Collision occurred with kMer: [CGC] and table entity: [TTC] at index -> 1
+Collision occurred with kMer: [CGC] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [CGC] and table entity: [ATT] at index -> 3
+Collision occurred with kMer: [CGC] and table entity: [TCC] at index -> 4
+Collision occurred with kMer: [CGC] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [GCT] and table entity: [CCC] at index -> 0
+Collision occurred with kMer: [GCT] and table entity: [TTC] at index -> 1
+Collision occurred with kMer: [GCT] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [GCT] and table entity: [ATT] at index -> 3
+Collision occurred with kMer: [GCT] and table entity: [TCC] at index -> 4
+Collision occurred with kMer: [GCT] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [GCT] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [CTC] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [CTC] and table entity: [ATT] at index -> 3
+Collision occurred with kMer: [CTC] and table entity: [TCC] at index -> 4
+Collision occurred with kMer: [CTC] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [CTC] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [CTC] and table entity: [GCT] at index -> 7
+Collision occurred with kMer: [TCC] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [TCC] and table entity: [ATT] at index -> 3
+Collision occurred with kMer: [CCT] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [CCT] and table entity: [ATT] at index -> 3
+Collision occurred with kMer: [CCT] and table entity: [TCC] at index -> 4
+Collision occurred with kMer: [CCT] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [CCT] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [CCT] and table entity: [GCT] at index -> 7
+Collision occurred with kMer: [CCT] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [CTG] and table entity: [CCC] at index -> 0
+Collision occurred with kMer: [CTG] and table entity: [TTC] at index -> 1
+Collision occurred with kMer: [CTG] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [CTG] and table entity: [ATT] at index -> 3
+Collision occurred with kMer: [CTG] and table entity: [TCC] at index -> 4
+Collision occurred with kMer: [CTG] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [CTG] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [CTG] and table entity: [GCT] at index -> 7
+Collision occurred with kMer: [CTG] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [CTG] and table entity: [CCT] at index -> 9
+Collision occurred with kMer: [TGT] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [TGT] and table entity: [ATT] at index -> 3
+Collision occurred with kMer: [TGT] and table entity: [TCC] at index -> 4
+Collision occurred with kMer: [TGT] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [TGT] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [TGT] and table entity: [GCT] at index -> 7
+Collision occurred with kMer: [TGT] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [TGT] and table entity: [CCT] at index -> 9
+Collision occurred with kMer: [TGT] and table entity: [CTG] at index -> 10
+Collision occurred with kMer: [GTG] and table entity: [TTC] at index -> 1
+Collision occurred with kMer: [GTG] and table entity: [TAT] at index -> 2
+Collision occurred with kMer: [GTG] and table entity: [ATT] at index -> 3
+Collision occurred with kMer: [GTG] and table entity: [TCC] at index -> 4
+Collision occurred with kMer: [GTG] and table entity: [CCG] at index -> 5
+Collision occurred with kMer: [GTG] and table entity: [CGC] at index -> 6
+Collision occurred with kMer: [GTG] and table entity: [GCT] at index -> 7
+Collision occurred with kMer: [GTG] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [GTG] and table entity: [CCT] at index -> 9
+Collision occurred with kMer: [GTG] and table entity: [CTG] at index -> 10
+Collision occurred with kMer: [GTG] and table entity: [TGT] at index -> 11
+
+Instance [3]
+Collision occurred with kMer: [CGG] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GGG] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [GGG] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GGG] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GGG] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GGG] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [GGG] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GGG] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GGG] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GGT] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GGT] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GGT] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GGT] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [GTG] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GTG] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GTG] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GTG] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [GTG] and table entity: [GGT] at index -> 5
+Collision occurred with kMer: [TGT] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [TGT] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [TGT] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [TGT] and table entity: [GGT] at index -> 5
+Collision occurred with kMer: [TGT] and table entity: [GTG] at index -> 6
+Collision occurred with kMer: [GTG] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [GTG] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GTG] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GTG] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [GTG] and table entity: [GGT] at index -> 5
+Collision occurred with kMer: [TGC] and table entity: [TCA] at index -> 0
+Collision occurred with kMer: [TGC] and table entity: [CAC] at index -> 1
+Collision occurred with kMer: [TGC] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [TGC] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [TGC] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [TGC] and table entity: [GGT] at index -> 5
+Collision occurred with kMer: [TGC] and table entity: [GTG] at index -> 6
+Collision occurred with kMer: [TGC] and table entity: [TGT] at index -> 7
+Collision occurred with kMer: [GCA] and table entity: [ACG] at index -> 2
+Collision occurred with kMer: [GCA] and table entity: [CGG] at index -> 3
+Collision occurred with kMer: [GCA] and table entity: [GGG] at index -> 4
+Collision occurred with kMer: [GCA] and table entity: [GGT] at index -> 5
+Collision occurred with kMer: [GCA] and table entity: [GTG] at index -> 6
+Collision occurred with kMer: [GCA] and table entity: [TGT] at index -> 7
+Collision occurred with kMer: [GCA] and table entity: [TGC] at index -> 8
+
+Instance [4]
+Collision occurred with kMer: [GTG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TGA] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TGA] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GAC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GAC] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [ACC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [ACC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [ACC] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [ACC] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [CCC] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [CCC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CCC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CCC] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [CCC] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [CCC] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [CCT] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CCT] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [CCT] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [CCT] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [CCT] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [CTC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CTC] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [CTC] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [CTC] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [CTC] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [CTC] and table entity: [CCT] at index -> 7
+Collision occurred with kMer: [TCT] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TCT] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [TCT] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [TCT] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [TCT] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [TCT] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [TCT] and table entity: [CCT] at index -> 7
+Collision occurred with kMer: [TCT] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [CTG] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [CTG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CTG] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CTG] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [CTG] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [CTG] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [CTG] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [CTG] and table entity: [CCT] at index -> 7
+Collision occurred with kMer: [CTG] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [CTG] and table entity: [TCT] at index -> 9
+Collision occurred with kMer: [TGA] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TGA] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GAG] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [GAG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [GAG] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GAG] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [GAG] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [GAG] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [GAG] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [GAG] and table entity: [CCT] at index -> 7
+Collision occurred with kMer: [GAG] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [GAG] and table entity: [TCT] at index -> 9
+Collision occurred with kMer: [GAG] and table entity: [CTG] at index -> 10
+Collision occurred with kMer: [AGT] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [AGT] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [AGT] and table entity: [TGA] at index -> 3
+Collision occurred with kMer: [AGT] and table entity: [GAC] at index -> 4
+Collision occurred with kMer: [AGT] and table entity: [ACC] at index -> 5
+Collision occurred with kMer: [AGT] and table entity: [CCC] at index -> 6
+Collision occurred with kMer: [AGT] and table entity: [CCT] at index -> 7
+Collision occurred with kMer: [AGT] and table entity: [CTC] at index -> 8
+Collision occurred with kMer: [AGT] and table entity: [TCT] at index -> 9
+Collision occurred with kMer: [AGT] and table entity: [CTG] at index -> 10
+Collision occurred with kMer: [AGT] and table entity: [GAG] at index -> 11
+
+Instance [5]
+Collision occurred with kMer: [GTG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TGG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TGG] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GTA] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [GTA] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GTA] and table entity: [TGG] at index -> 3
+Collision occurred with kMer: [TAG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TAG] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [TAG] and table entity: [TGG] at index -> 3
+Collision occurred with kMer: [TAG] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [AGG] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [AGG] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [AGG] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [AGG] and table entity: [TGG] at index -> 3
+Collision occurred with kMer: [AGG] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [AGG] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [GTC] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [GTC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [GTC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [GTC] and table entity: [TGG] at index -> 3
+Collision occurred with kMer: [GTC] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [GTC] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [GTC] and table entity: [AGG] at index -> 6
+Collision occurred with kMer: [TCA] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [TCA] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [TCA] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [TCA] and table entity: [TGG] at index -> 3
+Collision occurred with kMer: [TCA] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [TCA] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [TCA] and table entity: [AGG] at index -> 6
+Collision occurred with kMer: [TCA] and table entity: [GTC] at index -> 7
+Collision occurred with kMer: [CAC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CAC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CAC] and table entity: [TGG] at index -> 3
+Collision occurred with kMer: [CAC] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [CAC] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [CAC] and table entity: [AGG] at index -> 6
+Collision occurred with kMer: [CAC] and table entity: [GTC] at index -> 7
+Collision occurred with kMer: [CAC] and table entity: [TCA] at index -> 8
+Collision occurred with kMer: [ACC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [ACC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [ACC] and table entity: [TGG] at index -> 3
+Collision occurred with kMer: [ACC] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [ACC] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [ACC] and table entity: [AGG] at index -> 6
+Collision occurred with kMer: [ACC] and table entity: [GTC] at index -> 7
+Collision occurred with kMer: [ACC] and table entity: [TCA] at index -> 8
+Collision occurred with kMer: [ACC] and table entity: [CAC] at index -> 9
+Collision occurred with kMer: [CCC] and table entity: [GGG] at index -> 0
+Collision occurred with kMer: [CCC] and table entity: [GGT] at index -> 1
+Collision occurred with kMer: [CCC] and table entity: [GTG] at index -> 2
+Collision occurred with kMer: [CCC] and table entity: [TGG] at index -> 3
+Collision occurred with kMer: [CCC] and table entity: [GTA] at index -> 4
+Collision occurred with kMer: [CCC] and table entity: [TAG] at index -> 5
+Collision occurred with kMer: [CCC] and table entity: [AGG] at index -> 6
+Collision occurred with kMer: [CCC] and table entity: [GTC] at index -> 7
+Collision occurred with kMer: [CCC] and table entity: [TCA] at index -> 8
+Collision occurred with kMer: [CCC] and table entity: [CAC] at index -> 9
+Collision occurred with kMer: [CCC] and table entity: [ACC] at index -> 10
+

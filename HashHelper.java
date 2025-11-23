@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class HashingOne {
+public class HashHelper {
   private String input;
   private int length;
   private int size;
@@ -12,7 +12,7 @@ public class HashingOne {
   private ArrayList<String> resolvedSubstring;
   private final double CONSTANT_FRACTION =  0.61803398875; //The most used fractional portion for the multiplication method
 
-  public HashingOne(String input, int size) {
+  public HashHelper(String input, int size) {
     this.input = input;
     this.length = input.length();
     this.size = size;
@@ -54,7 +54,7 @@ public class HashingOne {
 
     return true;
 }
-
+//TODO: THIS FUNCTION ACTUALLY DOESNT TAKE INTO ACCOUNT THE MAXPOSITIONS IN OUR DRIVER EASY INTEGRATION
   public int isClosestPrime() {
     if (maxPositions == 2) {
       closestPrime = 2;
@@ -66,7 +66,6 @@ public class HashingOne {
         i++;
       }
 
-      //this is for closest GREATER prime number
       while (!isPrime(i)) { //if closest LESSER prime number, just add && i < maxPositions
         i += 2;
       }
@@ -117,37 +116,6 @@ public class HashingOne {
         resolvedIndex.add(idx);
     }
   }
-
-
-  public int noOfOccurrences(String s) {
-    int count = 0;
-
-    for (int i = 0; i <= length - size; i++) {
-      String section = input.substring(i, i + size);
-      if (section.equals(s)) {
-        count++;
-      }
-    }
-    
-    return count;
-  }
-
-  public ArrayList<String> getSubstrings() {
-    return substrings;
-  }
-
-  public int getMaxPositions() {
-    return maxPositions;
-  }
-
-  public ArrayList<Integer> getResolvedIndex() {
-    return resolvedIndex;
-  }
-
-  public ArrayList<String> getResolvedSubstring() {
-    return resolvedSubstring;
-  }
-
   public double getFraction() {
       return CONSTANT_FRACTION;
   }

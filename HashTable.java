@@ -1,14 +1,18 @@
 public class HashTable {
     Entry[] table;
     int size;
+    private int CollisionCounter;
+    private StringBuilder CollisionLog;
 
     public HashTable(int size){
         this.size = size;
         table = new Entry[size];
+        this.CollisionCounter = 0;
+        CollisionLog = new StringBuilder();
     }
 
     private int mulHash(String subString){
-        HashingOne hashOne = new HashingOne(subString, size);
+        HashHelper hashOne = new HashHelper(subString, size);
 
         int hashedString = subString.hashCode();
         int lesserPower = hashOne.isLesserPower();
@@ -22,7 +26,7 @@ public class HashTable {
     }
 
     private int divHash(String subString){
-        HashingOne hashOne = new HashingOne(subString, size);
+        HashHelper hashOne = new HashHelper(subString, size);
 
         int hashedString = subString.hashCode();
 
@@ -33,6 +37,7 @@ public class HashTable {
         int index = mulHash(kMer);
         int loopCount = 0;
 
+
         while (table[index] != null) {
 
             if (table[index].kmer().equals(kMer)) {
@@ -40,20 +45,14 @@ public class HashTable {
                 return;
             }
 
-            // ✅ PRINT FIRST BEFORE MOVING
-            System.out.println(
-                    "Collision occurred with kMer: [" + kMer +
-                            "] and table entity: [" + table[index].kmer() +
-                            "] at index -> " + index
-            );
+            CollisionLog.append("Collision occurred with kMer: [").append(kMer).append("] and table entity: [").append(table[index].kmer()).append("] at index -> ").append(index).append("\n");
+            CollisionCounter++;
 
             loopCount++;
             if (loopCount == size) {
                 System.out.println("[ERROR] CANNOT FIND EMPTY SLOTS RETURNING NOW");
                 return;
             }
-
-            // NOW move
             index = (index + 1) % size;
         }
 
@@ -70,13 +69,8 @@ public class HashTable {
                 table[index].inc();
                 return;
             }
-
-            // ✅ PRINT FIRST BEFORE MOVING
-            System.out.println(
-                    "Collision occurred with kMer: [" + kMer +
-                            "] and table entity: [" + table[index].kmer() +
-                            "] at index -> " + index
-            );
+            CollisionLog.append("Collision occurred with kMer: [").append(kMer).append("] and table entity: [").append(table[index].kmer()).append("] at index -> ").append(index).append("\n");
+            CollisionCounter++;
 
             loopCount++;
             if (loopCount == size) {
@@ -92,7 +86,7 @@ public class HashTable {
     }
 
 
-    public void computeMul(String dna, int k) {
+    public void computeMul(String dna, int k){
         for (int i = 0; i <= dna.length() - k; i++) {
             String kmer = dna.substring(i, i + k);
             insertMul(kmer);
@@ -116,6 +110,17 @@ public class HashTable {
     }
 
 
+    public void printCollisions(){
+        System.out.print("# of collisions [" + this.CollisionCounter + "]");
+    }
+
+    public int getCollisionCounter(){
+        return this.CollisionCounter;
+    }
+
+    public String getCollisionLog(){
+        return this.CollisionLog.toString();
+    }
 }
 
 
